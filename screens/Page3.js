@@ -2,13 +2,13 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Turco() {
+export default function Page3() {
     const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => NavigationContainer.navigate ("Page2")}>
-                <Text style={styles.text}>My Home Page</Text>
+            <TouchableOpacity onPress={() => NavigationContainer.navigate ("Page4")}>
+                <Text style={styles.text}>Page 3</Text>
             </TouchableOpacity>
         </View>
     );
@@ -24,5 +24,6 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
         color: '#000',
+        textDecorationColor: 'underline',
     },
 });
